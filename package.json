@@ -1,0 +1,21 @@
+{
+  "name": "capstone-project-template",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "lint": "^0.8.19",
+    "scss": "^0.2.4"
+  },
+  "scripts": {
+    "lint": "eslint . && stylelint '**/*.{,scss}'",
+    "sass": "sass src/styles.scss src/styles.css"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "stylelint": "^16.17.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-scss": "^6.11.1"
+  }
+}

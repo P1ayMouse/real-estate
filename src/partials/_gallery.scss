@@ -1,0 +1,259 @@
+@use './variables' as vars;
+@use './mixins' as mixins;
+
+#gallery {
+  display: flex;
+  gap: 50px;
+  padding: 100px 50px;
+  justify-content: center;
+  align-items: flex-start;
+
+  .sorting {
+    position: sticky;
+    top: vars.$header-height + 100;
+    flex: 0 0 250px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h3 {
+      font-size: 1.75rem;
+      color: vars.$second-color;
+      margin-bottom: 10px;
+    }
+
+    .sort-item {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-weight: bold;
+        font-size: 0.95rem;
+        margin-bottom: 5px;
+        color: vars.$second-color;
+      }
+
+      select, input[type="range"], input[type="text"] {
+        padding: 10px 12px;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: 2px solid rgba(vars.$second-color, 80%);
+        background-color: vars.$main-color;
+        color: vars.$second-color;
+        transition: all 0.3s ease;
+
+        &:hover, &:focus {
+          border-color: vars.$second-color;
+          outline: none;
+          background-color: #FFF;
+        }
+      }
+
+      #price-value {
+        font-weight: bold;
+        font-size: 1rem;
+        color: vars.$second-color;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .gallery-content {
+    @include mixins.flex-center(column);
+
+    flex: 1;
+
+    h2 {
+      font-size: 3rem;
+      color: vars.$second-color;
+      margin-bottom: 50px;
+    }
+
+    .gallery-estates-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      list-style: none;
+
+      .not-found {
+        color: vars.$second-color;
+        margin: 100px 0;
+      }
+
+      .gallery-estate {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: vars.$main-color;
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+
+        .estate-info {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: rgba(vars.$second-color, 0.85);
+          color: vars.$main-color;
+          padding: 15px;
+          box-sizing: border-box;
+
+          h3 {
+            margin: 0;
+            font-size: 1.25rem;
+          }
+
+          p {
+            margin: 5px 0 0;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .pagination {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      button {
+        background-color: vars.$second-color;
+        color: vars.$main-color;
+        border: none;
+        padding: 8px 14px;
+        margin: 5px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+
+        &.active {
+          background-color: vars.$main-color;
+          color: vars.$second-color;
+          border: 2px solid vars.$second-color;
+        }
+
+        &:hover:not(:disabled) {
+          color: vars.$main-color;
+          background-color: rgba(vars.$second-color, 60%);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1115px) {
+    padding: 40px 10px;
+
+    .gallery-content {
+      h2 {
+        font-size: 2rem;
+      }
+
+      .gallery-estates-list {
+        gap: 20px;
+
+        .gallery-estate {
+          width: 100%;
+          height: auto;
+
+          img {
+            height: 250px;
+          }
+        }
+      }
+
+      .pagination {
+        flex-wrap: wrap;
+
+        button {
+          padding: 6px 10px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px), (max-height: 500px) {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+
+    .sorting {
+      position: static;
+      align-self: center;
+      width: 90%;
+      margin-bottom: 20px;
+      padding: 15px;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .sort-item {
+        label {
+          font-size: 0.9rem;
+        }
+
+        select, input[type="range"], input[type="text"] {
+          font-size: 0.85rem;
+          padding: 8px 10px;
+        }
+      }
+    }
+
+    .gallery-content {
+      width: 100%;
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .gallery-estates-list {
+        gap: 15px;
+
+        .gallery-estate {
+          width: 100%;
+          height: auto;
+
+          img {
+            height: 200px;
+          }
+        }
+      }
+
+      .pagination {
+        margin-top: 20px;
+
+        button {
+          padding: 5px 8px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

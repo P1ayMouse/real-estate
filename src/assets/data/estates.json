@@ -1,0 +1,906 @@
+[
+  {
+    "id": 1,
+    "title": "Modern Family Home",
+    "type": "sale",
+    "price": 350000,
+    "size": 2000,
+    "location": {
+      "address": "123 Maple Street",
+      "city": "Springfield",
+      "state": "Illinois",
+      "zip": "62704",
+      "coordinates": { "lat": 39.7817, "lng": -89.6501 }
+    },
+    "amenities": ["Garage", "Garden", "Fireplace", "Basement"],
+    "photos": [
+      "Prop1_ModernFamilyHome_1.jpg",
+      "Prop1_ModernFamilyHome_2.jpg",
+      "Prop1_ModernFamilyHome_3.jpg"
+    ],
+    "description": "A beautiful modern family home located in a friendly neighborhood."
+  },
+  {
+    "id": 2,
+    "title": "Downtown Apartment",
+    "type": "rent",
+    "price": 1500,
+    "size": 850,
+    "location": {
+      "address": "456 Oak Avenue",
+      "city": "Chicago",
+      "state": "Illinois",
+      "zip": "60611",
+      "coordinates": { "lat": 41.8781, "lng": -87.6298 }
+    },
+    "amenities": ["Elevator", "Gym", "Balcony", "Security"],
+    "photos": [
+      "Prop2_DowntownApartment_1.jpg",
+      "Prop2_DowntownApartment_2.jpg"
+    ],
+    "description": "Convenient downtown apartment with modern amenities and easy access to public transport."
+  },
+  {
+    "id": 3,
+    "title": "Cozy Cottage",
+    "type": "sale",
+    "price": 200000,
+    "size": 1200,
+    "location": {
+      "address": "789 Pine Road",
+      "city": "Madison",
+      "state": "Wisconsin",
+      "zip": "53703",
+      "coordinates": { "lat": 43.0731, "lng": -89.4012 }
+    },
+    "amenities": ["Fireplace", "Garden", "Patio"],
+    "photos": [
+      "Prop3_CozyCottage_1.jpg",
+      "Prop3_CozyCottage_2.jpg",
+      "Prop3_CozyCottage_3.jpg"
+    ],
+    "description": "A charming cottage perfect for those looking for a quiet retreat."
+  },
+  {
+    "id": 4,
+    "title": "Luxury Villa",
+    "type": "sale",
+    "price": 1250000,
+    "size": 5000,
+    "location": {
+      "address": "321 Palm Drive",
+      "city": "Beverly Hills",
+      "state": "California",
+      "zip": "90210",
+      "coordinates": { "lat": 34.0736, "lng": -118.4004 }
+    },
+    "amenities": ["Swimming Pool", "Home Theater", "Gym", "Spa"],
+    "photos": [
+      "Prop4_LuxuryVilla_1.jpg",
+      "Prop4_LuxuryVilla_2.jpg",
+      "Prop4_LuxuryVilla_3.jpg"
+    ],
+    "description": "Experience luxury living in this expansive villa with top-notch facilities."
+  },
+  {
+    "id": 5,
+    "title": "Suburban House",
+    "type": "rent",
+    "price": 2200,
+    "size": 1800,
+    "location": {
+      "address": "654 Birch Lane",
+      "city": "Austin",
+      "state": "Texas",
+      "zip": "78704",
+      "coordinates": { "lat": 30.2672, "lng": -97.7431 }
+    },
+    "amenities": ["Garage", "Backyard", "Fireplace"],
+    "photos": [
+      "Prop5_SuburbanHouse_1.jpg",
+      "Prop5_SuburbanHouse_2.jpg"
+    ],
+    "description": "Comfortable suburban house with a spacious backyard, ideal for families."
+  },
+  {
+    "id": 6,
+    "title": "Beachfront Condo",
+    "type": "sale",
+    "price": 750000,
+    "size": 1500,
+    "location": {
+      "address": "987 Ocean Blvd",
+      "city": "Miami",
+      "state": "Florida",
+      "zip": "33139",
+      "coordinates": { "lat": 25.7617, "lng": -80.1918 }
+    },
+    "amenities": ["Ocean View", "Pool", "Balcony", "Gym"],
+    "photos": [
+      "Prop6_BeachfrontCondo_1.jpg",
+      "Prop6_BeachfrontCondo_2.jpg",
+      "Prop6_BeachfrontCondo_3.jpg"
+    ],
+    "description": "Enjoy stunning ocean views in this modern beachfront condo."
+  },
+  {
+    "id": 7,
+    "title": "Rustic Farmhouse",
+    "type": "sale",
+    "price": 500000,
+    "size": 3500,
+    "location": {
+      "address": "147 Country Road",
+      "city": "Nashville",
+      "state": "Tennessee",
+      "zip": "37011",
+      "coordinates": { "lat": 36.1627, "lng": -86.7816 }
+    },
+    "amenities": ["Barn", "Garden", "Patio", "Fireplace"],
+    "photos": [
+      "Prop7_RusticFarmhouse_1.jpg",
+      "Prop7_RusticFarmhouse_2.jpg"
+    ],
+    "description": "A charming farmhouse with a rustic feel, offering plenty of space and character."
+  },
+  {
+    "id": 8,
+    "title": "Urban Loft",
+    "type": "rent",
+    "price": 1800,
+    "size": 1000,
+    "location": {
+      "address": "258 Industrial Park",
+      "city": "New York",
+      "state": "New York",
+      "zip": "10001",
+      "coordinates": { "lat": 40.7128, "lng": -74.0060 }
+    },
+    "amenities": ["High Ceilings", "Modern Kitchen", "Open Floor Plan"],
+    "photos": [
+      "Prop8_UrbanLoft_1.jpg",
+      "Prop8_UrbanLoft_2.jpg",
+      "Prop8_UrbanLoft_3.jpg"
+    ],
+    "description": "A trendy urban loft situated in the heart of New York City, with an open concept design."
+  },
+  {
+    "id": 9,
+    "title": "Mountain Cabin",
+    "type": "sale",
+    "price": 300000,
+    "size": 1400,
+    "location": {
+      "address": "369 Mountain Trail",
+      "city": "Denver",
+      "state": "Colorado",
+      "zip": "80202",
+      "coordinates": { "lat": 39.7392, "lng": -104.9903 }
+    },
+    "amenities": ["Fireplace", "Deck", "Scenic Views"],
+    "photos": [
+      "Prop9_MountainCabin_1.jpg",
+      "Prop9_MountainCabin_2.jpg"
+    ],
+    "description": "A cozy mountain cabin that offers a peaceful retreat with breathtaking views."
+  },
+  {
+    "id": 10,
+    "title": "City Studio",
+    "type": "rent",
+    "price": 1200,
+    "size": 600,
+    "location": {
+      "address": "159 City Center",
+      "city": "San Francisco",
+      "state": "California",
+      "zip": "94105",
+      "coordinates": { "lat": 37.7749, "lng": -122.4194 }
+    },
+    "amenities": ["Compact Design", "Elevator", "Public Transport Access"],
+    "photos": [
+      "Prop10_CityStudio_1.jpg",
+      "Prop10_CityStudio_2.jpg"
+    ],
+    "description": "A modern and efficient studio apartment, perfect for city living."
+  },
+  {
+    "id": 11,
+    "title": "Country Estate",
+    "type": "sale",
+    "price": 2000000,
+    "size": 8000,
+    "location": {
+      "address": "753 Country Estate Drive",
+      "city": "Charleston",
+      "state": "South Carolina",
+      "zip": "29401",
+      "coordinates": { "lat": 32.7765, "lng": -79.9311 }
+    },
+    "amenities": ["Large Grounds", "Pool", "Guest House", "Tennis Court"],
+    "photos": [
+      "Prop11_CountryEstate_1.jpg",
+      "Prop11_CountryEstate_2.jpg",
+      "Prop11_CountryEstate_3.jpg"
+    ],
+    "description": "An exquisite country estate offering luxurious living with ample space and beautiful surroundings."
+  },
+  {
+    "id": 12,
+    "title": "Modern Family Home - New Listing",
+    "type": "sale",
+    "price": 355000,
+    "size": 2000,
+    "location": {
+      "address": "123 Maple Street",
+      "city": "Springfield",
+      "state": "Illinois",
+      "zip": "62704",
+      "coordinates": { "lat": 39.7817, "lng": -89.6501 }
+    },
+    "amenities": ["Garage", "Garden", "Fireplace", "Basement"],
+    "photos": [
+      "Prop12_ModernFamilyHome_1.jpg",
+      "Prop12_ModernFamilyHome_2.jpg",
+      "Prop12_ModernFamilyHome_3.jpg"
+    ],
+    "description": "A beautiful modern family home located in a friendly neighborhood."
+  },
+  {
+    "id": 13,
+    "title": "Downtown Apartment - New Listing",
+    "type": "rent",
+    "price": 1600,
+    "size": 850,
+    "location": {
+      "address": "456 Oak Avenue",
+      "city": "Chicago",
+      "state": "Illinois",
+      "zip": "60611",
+      "coordinates": { "lat": 41.8781, "lng": -87.6298 }
+    },
+    "amenities": ["Elevator", "Gym", "Balcony", "Security"],
+    "photos": [
+      "Prop13_DowntownApartment_1.jpg",
+      "Prop13_DowntownApartment_2.jpg"
+    ],
+    "description": "Convenient downtown apartment with modern amenities and easy access to public transport."
+  },
+  {
+    "id": 14,
+    "title": "Cozy Cottage - New Listing",
+    "type": "sale",
+    "price": 205000,
+    "size": 1200,
+    "location": {
+      "address": "789 Pine Road",
+      "city": "Madison",
+      "state": "Wisconsin",
+      "zip": "53703",
+      "coordinates": { "lat": 43.0731, "lng": -89.4012 }
+    },
+    "amenities": ["Fireplace", "Garden", "Patio"],
+    "photos": [
+      "Prop14_CozyCottage_1.jpg",
+      "Prop14_CozyCottage_2.jpg",
+      "Prop14_CozyCottage_3.jpg"
+    ],
+    "description": "A charming cottage perfect for those looking for a quiet retreat."
+  },
+  {
+    "id": 15,
+    "title": "Luxury Villa - New Listing",
+    "type": "sale",
+    "price": 1255000,
+    "size": 5000,
+    "location": {
+      "address": "321 Palm Drive",
+      "city": "Beverly Hills",
+      "state": "California",
+      "zip": "90210",
+      "coordinates": { "lat": 34.0736, "lng": -118.4004 }
+    },
+    "amenities": ["Swimming Pool", "Home Theater", "Gym", "Spa"],
+    "photos": [
+      "Prop15_LuxuryVilla_1.jpg",
+      "Prop15_LuxuryVilla_2.jpg",
+      "Prop15_LuxuryVilla_3.jpg"
+    ],
+    "description": "Experience luxury living in this expansive villa with top-notch facilities."
+  },
+  {
+    "id": 16,
+    "title": "Suburban House - New Listing",
+    "type": "rent",
+    "price": 2300,
+    "size": 1800,
+    "location": {
+      "address": "654 Birch Lane",
+      "city": "Austin",
+      "state": "Texas",
+      "zip": "78704",
+      "coordinates": { "lat": 30.2672, "lng": -97.7431 }
+    },
+    "amenities": ["Garage", "Backyard", "Fireplace"],
+    "photos": [
+      "Prop16_SuburbanHouse_1.jpg",
+      "Prop16_SuburbanHouse_2.jpg"
+    ],
+    "description": "Comfortable suburban house with a spacious backyard, ideal for families."
+  },
+  {
+    "id": 17,
+    "title": "Beachfront Condo - New Listing",
+    "type": "sale",
+    "price": 755000,
+    "size": 1500,
+    "location": {
+      "address": "987 Ocean Blvd",
+      "city": "Miami",
+      "state": "Florida",
+      "zip": "33139",
+      "coordinates": { "lat": 25.7617, "lng": -80.1918 }
+    },
+    "amenities": ["Ocean View", "Pool", "Balcony", "Gym"],
+    "photos": [
+      "Prop17_BeachfrontCondo_1.jpg",
+      "Prop17_BeachfrontCondo_2.jpg",
+      "Prop17_BeachfrontCondo_3.jpg"
+    ],
+    "description": "Enjoy stunning ocean views in this modern beachfront condo."
+  },
+  {
+    "id": 18,
+    "title": "Rustic Farmhouse - New Listing",
+    "type": "sale",
+    "price": 505000,
+    "size": 3500,
+    "location": {
+      "address": "147 Country Road",
+      "city": "Nashville",
+      "state": "Tennessee",
+      "zip": "37011",
+      "coordinates": { "lat": 36.1627, "lng": -86.7816 }
+    },
+    "amenities": ["Barn", "Garden", "Patio", "Fireplace"],
+    "photos": [
+      "Prop18_RusticFarmhouse_1.jpg",
+      "Prop18_RusticFarmhouse_2.jpg"
+    ],
+    "description": "A charming farmhouse with a rustic feel, offering plenty of space and character."
+  },
+  {
+    "id": 19,
+    "title": "Urban Loft - New Listing",
+    "type": "rent",
+    "price": 1900,
+    "size": 1000,
+    "location": {
+      "address": "258 Industrial Park",
+      "city": "New York",
+      "state": "New York",
+      "zip": "10001",
+      "coordinates": { "lat": 40.7128, "lng": -74.0060 }
+    },
+    "amenities": ["High Ceilings", "Modern Kitchen", "Open Floor Plan"],
+    "photos": [
+      "Prop19_UrbanLoft_1.jpg",
+      "Prop19_UrbanLoft_2.jpg",
+      "Prop19_UrbanLoft_3.jpg"
+    ],
+    "description": "A trendy urban loft situated in the heart of New York City, with an open concept design."
+  },
+  {
+    "id": 20,
+    "title": "Mountain Cabin - New Listing",
+    "type": "sale",
+    "price": 305000,
+    "size": 1400,
+    "location": {
+      "address": "369 Mountain Trail",
+      "city": "Denver",
+      "state": "Colorado",
+      "zip": "80202",
+      "coordinates": { "lat": 39.7392, "lng": -104.9903 }
+    },
+    "amenities": ["Fireplace", "Deck", "Scenic Views"],
+    "photos": [
+      "Prop20_MountainCabin_1.jpg",
+      "Prop20_MountainCabin_2.jpg"
+    ],
+    "description": "A cozy mountain cabin that offers a peaceful retreat with breathtaking views."
+  },
+  {
+    "id": 21,
+    "title": "City Studio - New Listing",
+    "type": "rent",
+    "price": 1300,
+    "size": 600,
+    "location": {
+      "address": "159 City Center",
+      "city": "San Francisco",
+      "state": "California",
+      "zip": "94105",
+      "coordinates": { "lat": 37.7749, "lng": -122.4194 }
+    },
+    "amenities": ["Compact Design", "Elevator", "Public Transport Access"],
+    "photos": [
+      "Prop21_CityStudio_1.jpg",
+      "Prop21_CityStudio_2.jpg"
+    ],
+    "description": "A modern and efficient studio apartment, perfect for city living."
+  },
+  {
+    "id": 22,
+    "title": "Country Estate - New Listing",
+    "type": "sale",
+    "price": 2005000,
+    "size": 8000,
+    "location": {
+      "address": "753 Country Estate Drive",
+      "city": "Charleston",
+      "state": "South Carolina",
+      "zip": "29401",
+      "coordinates": { "lat": 32.7765, "lng": -79.9311 }
+    },
+    "amenities": ["Large Grounds", "Pool", "Guest House", "Tennis Court"],
+    "photos": [
+      "Prop22_CountryEstate_1.jpg",
+      "Prop22_CountryEstate_2.jpg",
+      "Prop22_CountryEstate_3.jpg"
+    ],
+    "description": "An exquisite country estate offering luxurious living with ample space and beautiful surroundings."
+  },
+  {
+    "id": 23,
+    "title": "Modern Family Home - Special Edition",
+    "type": "sale",
+    "price": 360000,
+    "size": 2000,
+    "location": {
+      "address": "123 Maple Street",
+      "city": "Springfield",
+      "state": "Illinois",
+      "zip": "62704",
+      "coordinates": { "lat": 39.7817, "lng": -89.6501 }
+    },
+    "amenities": ["Garage", "Garden", "Fireplace", "Basement"],
+    "photos": [
+      "Prop23_ModernFamilyHome_1.jpg",
+      "Prop23_ModernFamilyHome_2.jpg",
+      "Prop23_ModernFamilyHome_3.jpg"
+    ],
+    "description": "A beautiful modern family home located in a friendly neighborhood."
+  },
+  {
+    "id": 24,
+    "title": "Downtown Apartment - Special Edition",
+    "type": "rent",
+    "price": 1700,
+    "size": 850,
+    "location": {
+      "address": "456 Oak Avenue",
+      "city": "Chicago",
+      "state": "Illinois",
+      "zip": "60611",
+      "coordinates": { "lat": 41.8781, "lng": -87.6298 }
+    },
+    "amenities": ["Elevator", "Gym", "Balcony", "Security"],
+    "photos": [
+      "Prop24_DowntownApartment_1.jpg",
+      "Prop24_DowntownApartment_2.jpg"
+    ],
+    "description": "Convenient downtown apartment with modern amenities and easy access to public transport."
+  },
+  {
+    "id": 25,
+    "title": "Cozy Cottage - Special Edition",
+    "type": "sale",
+    "price": 210000,
+    "size": 1200,
+    "location": {
+      "address": "789 Pine Road",
+      "city": "Madison",
+      "state": "Wisconsin",
+      "zip": "53703",
+      "coordinates": { "lat": 43.0731, "lng": -89.4012 }
+    },
+    "amenities": ["Fireplace", "Garden", "Patio"],
+    "photos": [
+      "Prop25_CozyCottage_1.jpg",
+      "Prop25_CozyCottage_2.jpg",
+      "Prop25_CozyCottage_3.jpg"
+    ],
+    "description": "A charming cottage perfect for those looking for a quiet retreat."
+  },
+  {
+    "id": 26,
+    "title": "Luxury Villa - Special Edition",
+    "type": "sale",
+    "price": 1260000,
+    "size": 5000,
+    "location": {
+      "address": "321 Palm Drive",
+      "city": "Beverly Hills",
+      "state": "California",
+      "zip": "90210",
+      "coordinates": { "lat": 34.0736, "lng": -118.4004 }
+    },
+    "amenities": ["Swimming Pool", "Home Theater", "Gym", "Spa"],
+    "photos": [
+      "Prop26_LuxuryVilla_1.jpg",
+      "Prop26_LuxuryVilla_2.jpg",
+      "Prop26_LuxuryVilla_3.jpg"
+    ],
+    "description": "Experience luxury living in this expansive villa with top-notch facilities."
+  },
+  {
+    "id": 27,
+    "title": "Suburban House - Special Edition",
+    "type": "rent",
+    "price": 2400,
+    "size": 1800,
+    "location": {
+      "address": "654 Birch Lane",
+      "city": "Austin",
+      "state": "Texas",
+      "zip": "78704",
+      "coordinates": { "lat": 30.2672, "lng": -97.7431 }
+    },
+    "amenities": ["Garage", "Backyard", "Fireplace"],
+    "photos": [
+      "Prop27_SuburbanHouse_1.jpg",
+      "Prop27_SuburbanHouse_2.jpg"
+    ],
+    "description": "Comfortable suburban house with a spacious backyard, ideal for families."
+  },
+  {
+    "id": 28,
+    "title": "Beachfront Condo - Special Edition",
+    "type": "sale",
+    "price": 760000,
+    "size": 1500,
+    "location": {
+      "address": "987 Ocean Blvd",
+      "city": "Miami",
+      "state": "Florida",
+      "zip": "33139",
+      "coordinates": { "lat": 25.7617, "lng": -80.1918 }
+    },
+    "amenities": ["Ocean View", "Pool", "Balcony", "Gym"],
+    "photos": [
+      "Prop28_BeachfrontCondo_1.jpg",
+      "Prop28_BeachfrontCondo_2.jpg",
+      "Prop28_BeachfrontCondo_3.jpg"
+    ],
+    "description": "Enjoy stunning ocean views in this modern beachfront condo."
+  },
+  {
+    "id": 29,
+    "title": "Rustic Farmhouse - Special Edition",
+    "type": "sale",
+    "price": 510000,
+    "size": 3500,
+    "location": {
+      "address": "147 Country Road",
+      "city": "Nashville",
+      "state": "Tennessee",
+      "zip": "37011",
+      "coordinates": { "lat": 36.1627, "lng": -86.7816 }
+    },
+    "amenities": ["Barn", "Garden", "Patio", "Fireplace"],
+    "photos": [
+      "Prop29_RusticFarmhouse_1.jpg",
+      "Prop29_RusticFarmhouse_2.jpg"
+    ],
+    "description": "A charming farmhouse with a rustic feel, offering plenty of space and character."
+  },
+  {
+    "id": 30,
+    "title": "Urban Loft - Special Edition",
+    "type": "rent",
+    "price": 2000,
+    "size": 1000,
+    "location": {
+      "address": "258 Industrial Park",
+      "city": "New York",
+      "state": "New York",
+      "zip": "10001",
+      "coordinates": { "lat": 40.7128, "lng": -74.0060 }
+    },
+    "amenities": ["High Ceilings", "Modern Kitchen", "Open Floor Plan"],
+    "photos": [
+      "Prop30_UrbanLoft_1.jpg",
+      "Prop30_UrbanLoft_2.jpg",
+      "Prop30_UrbanLoft_3.jpg"
+    ],
+    "description": "A trendy urban loft situated in the heart of New York City, with an open concept design."
+  },
+  {
+    "id": 31,
+    "title": "Mountain Cabin - Special Edition",
+    "type": "sale",
+    "price": 310000,
+    "size": 1400,
+    "location": {
+      "address": "369 Mountain Trail",
+      "city": "Denver",
+      "state": "Colorado",
+      "zip": "80202",
+      "coordinates": { "lat": 39.7392, "lng": -104.9903 }
+    },
+    "amenities": ["Fireplace", "Deck", "Scenic Views"],
+    "photos": [
+      "Prop31_MountainCabin_1.jpg",
+      "Prop31_MountainCabin_2.jpg"
+    ],
+    "description": "A cozy mountain cabin that offers a peaceful retreat with breathtaking views."
+  },
+  {
+    "id": 32,
+    "title": "City Studio - Special Edition",
+    "type": "rent",
+    "price": 1400,
+    "size": 600,
+    "location": {
+      "address": "159 City Center",
+      "city": "San Francisco",
+      "state": "California",
+      "zip": "94105",
+      "coordinates": { "lat": 37.7749, "lng": -122.4194 }
+    },
+    "amenities": ["Compact Design", "Elevator", "Public Transport Access"],
+    "photos": [
+      "Prop32_CityStudio_1.jpg",
+      "Prop32_CityStudio_2.jpg"
+    ],
+    "description": "A modern and efficient studio apartment, perfect for city living."
+  },
+  {
+    "id": 33,
+    "title": "Country Estate - Special Edition",
+    "type": "sale",
+    "price": 2010000,
+    "size": 8000,
+    "location": {
+      "address": "753 Country Estate Drive",
+      "city": "Charleston",
+      "state": "South Carolina",
+      "zip": "29401",
+      "coordinates": { "lat": 32.7765, "lng": -79.9311 }
+    },
+    "amenities": ["Large Grounds", "Pool", "Guest House", "Tennis Court"],
+    "photos": [
+      "Prop33_CountryEstate_1.jpg",
+      "Prop33_CountryEstate_2.jpg",
+      "Prop33_CountryEstate_3.jpg"
+    ],
+    "description": "An exquisite country estate offering luxurious living with ample space and beautiful surroundings."
+  },
+  {
+    "id": 34,
+    "title": "Modern Family Home - Premium",
+    "type": "sale",
+    "price": 365000,
+    "size": 2000,
+    "location": {
+      "address": "123 Maple Street",
+      "city": "Springfield",
+      "state": "Illinois",
+      "zip": "62704",
+      "coordinates": { "lat": 39.7817, "lng": -89.6501 }
+    },
+    "amenities": ["Garage", "Garden", "Fireplace", "Basement"],
+    "photos": [
+      "Prop34_ModernFamilyHome_1.jpg",
+      "Prop34_ModernFamilyHome_2.jpg",
+      "Prop34_ModernFamilyHome_3.jpg"
+    ],
+    "description": "A beautiful modern family home located in a friendly neighborhood."
+  },
+  {
+    "id": 35,
+    "title": "Downtown Apartment - Premium",
+    "type": "rent",
+    "price": 1800,
+    "size": 850,
+    "location": {
+      "address": "456 Oak Avenue",
+      "city": "Chicago",
+      "state": "Illinois",
+      "zip": "60611",
+      "coordinates": { "lat": 41.8781, "lng": -87.6298 }
+    },
+    "amenities": ["Elevator", "Gym", "Balcony", "Security"],
+    "photos": [
+      "Prop35_DowntownApartment_1.jpg",
+      "Prop35_DowntownApartment_2.jpg"
+    ],
+    "description": "Convenient downtown apartment with modern amenities and easy access to public transport."
+  },
+  {
+    "id": 36,
+    "title": "Cozy Cottage - Premium",
+    "type": "sale",
+    "price": 215000,
+    "size": 1200,
+    "location": {
+      "address": "789 Pine Road",
+      "city": "Madison",
+      "state": "Wisconsin",
+      "zip": "53703",
+      "coordinates": { "lat": 43.0731, "lng": -89.4012 }
+    },
+    "amenities": ["Fireplace", "Garden", "Patio"],
+    "photos": [
+      "Prop36_CozyCottage_1.jpg",
+      "Prop36_CozyCottage_2.jpg",
+      "Prop36_CozyCottage_3.jpg"
+    ],
+    "description": "A charming cottage perfect for those looking for a quiet retreat."
+  },
+  {
+    "id": 37,
+    "title": "Luxury Villa - Premium",
+    "type": "sale",
+    "price": 1265000,
+    "size": 5000,
+    "location": {
+      "address": "321 Palm Drive",
+      "city": "Beverly Hills",
+      "state": "California",
+      "zip": "90210",
+      "coordinates": { "lat": 34.0736, "lng": -118.4004 }
+    },
+    "amenities": ["Swimming Pool", "Home Theater", "Gym", "Spa"],
+    "photos": [
+      "Prop37_LuxuryVilla_1.jpg",
+      "Prop37_LuxuryVilla_2.jpg",
+      "Prop37_LuxuryVilla_3.jpg"
+    ],
+    "description": "Experience luxury living in this expansive villa with top-notch facilities."
+  },
+  {
+    "id": 38,
+    "title": "Suburban House - Premium",
+    "type": "rent",
+    "price": 2500,
+    "size": 1800,
+    "location": {
+      "address": "654 Birch Lane",
+      "city": "Austin",
+      "state": "Texas",
+      "zip": "78704",
+      "coordinates": { "lat": 30.2672, "lng": -97.7431 }
+    },
+    "amenities": ["Garage", "Backyard", "Fireplace"],
+    "photos": [
+      "Prop38_SuburbanHouse_1.jpg",
+      "Prop38_SuburbanHouse_2.jpg"
+    ],
+    "description": "Comfortable suburban house with a spacious backyard, ideal for families."
+  },
+  {
+    "id": 39,
+    "title": "Beachfront Condo - Premium",
+    "type": "sale",
+    "price": 765000,
+    "size": 1500,
+    "location": {
+      "address": "987 Ocean Blvd",
+      "city": "Miami",
+      "state": "Florida",
+      "zip": "33139",
+      "coordinates": { "lat": 25.7617, "lng": -80.1918 }
+    },
+    "amenities": ["Ocean View", "Pool", "Balcony", "Gym"],
+    "photos": [
+      "Prop39_BeachfrontCondo_1.jpg",
+      "Prop39_BeachfrontCondo_2.jpg",
+      "Prop39_BeachfrontCondo_3.jpg"
+    ],
+    "description": "Enjoy stunning ocean views in this modern beachfront condo."
+  },
+  {
+    "id": 40,
+    "title": "Rustic Farmhouse - Premium",
+    "type": "sale",
+    "price": 515000,
+    "size": 3500,
+    "location": {
+      "address": "147 Country Road",
+      "city": "Nashville",
+      "state": "Tennessee",
+      "zip": "37011",
+      "coordinates": { "lat": 36.1627, "lng": -86.7816 }
+    },
+    "amenities": ["Barn", "Garden", "Patio", "Fireplace"],
+    "photos": [
+      "Prop40_RusticFarmhouse_1.jpg",
+      "Prop40_RusticFarmhouse_2.jpg"
+    ],
+    "description": "A charming farmhouse with a rustic feel, offering plenty of space and character."
+  },
+  {
+    "id": 41,
+    "title": "Urban Loft - Premium",
+    "type": "rent",
+    "price": 2100,
+    "size": 1000,
+    "location": {
+      "address": "258 Industrial Park",
+      "city": "New York",
+      "state": "New York",
+      "zip": "10001",
+      "coordinates": { "lat": 40.7128, "lng": -74.0060 }
+    },
+    "amenities": ["High Ceilings", "Modern Kitchen", "Open Floor Plan"],
+    "photos": [
+      "Prop41_UrbanLoft_1.jpg",
+      "Prop41_UrbanLoft_2.jpg",
+      "Prop41_UrbanLoft_3.jpg"
+    ],
+    "description": "A trendy urban loft situated in the heart of New York City, with an open concept design."
+  },
+  {
+    "id": 42,
+    "title": "Mountain Cabin - Premium",
+    "type": "sale",
+    "price": 315000,
+    "size": 1400,
+    "location": {
+      "address": "369 Mountain Trail",
+      "city": "Denver",
+      "state": "Colorado",
+      "zip": "80202",
+      "coordinates": { "lat": 39.7392, "lng": -104.9903 }
+    },
+    "amenities": ["Fireplace", "Deck", "Scenic Views"],
+    "photos": [
+      "Prop42_MountainCabin_1.jpg",
+      "Prop42_MountainCabin_2.jpg"
+    ],
+    "description": "A cozy mountain cabin that offers a peaceful retreat with breathtaking views."
+  },
+  {
+    "id": 43,
+    "title": "City Studio - Premium",
+    "type": "rent",
+    "price": 1500,
+    "size": 600,
+    "location": {
+      "address": "159 City Center",
+      "city": "San Francisco",
+      "state": "California",
+      "zip": "94105",
+      "coordinates": { "lat": 37.7749, "lng": -122.4194 }
+    },
+    "amenities": ["Compact Design", "Elevator", "Public Transport Access"],
+    "photos": [
+      "Prop43_CityStudio_1.jpg",
+      "Prop43_CityStudio_2.jpg"
+    ],
+    "description": "A modern and efficient studio apartment, perfect for city living."
+  },
+  {
+    "id": 44,
+    "title": "Country Estate - Premium",
+    "type": "sale",
+    "price": 2015000,
+    "size": 8000,
+    "location": {
+      "address": "753 Country Estate Drive",
+      "city": "Charleston",
+      "state": "South Carolina",
+      "zip": "29401",
+      "coordinates": { "lat": 32.7765, "lng": -79.9311 }
+    },
+    "amenities": ["Large Grounds", "Pool", "Guest House", "Tennis Court"],
+    "photos": [
+      "Prop44_CountryEstate_1.jpg",
+      "Prop44_CountryEstate_2.jpg",
+      "Prop44_CountryEstate_3.jpg"
+    ],
+    "description": "An exquisite country estate offering luxurious living with ample space and beautiful surroundings."
+  }
+]

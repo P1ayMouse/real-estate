@@ -1,0 +1,88 @@
+@use './variables' as vars;
+@use './mixins' as mixins;
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 150px);
+
+  .contact-banner {
+    @include mixins.flex-center(column);
+
+    color: vars.$main-color;
+    background-color: vars.$second-color;
+    padding: 80px;
+    text-align: center;
+
+    h1 {
+      font-size: 65px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 25px;
+      max-width: 900px;
+    }
+
+    @include mixins.respond-to(mobile) {
+      h1 {
+        font-size: 45px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .map-container {
+    flex: 1;
+    margin: 25px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 450px;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 80px 20px;
+    background: vars.$second-color;
+
+    .contact-icon-container {
+      @include mixins.flex-center(column);
+
+      gap: 20px;
+      width: 250px;
+      padding: 20px;
+
+      .contact-icon {
+        width: 110px;
+        height: 110px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: vars.$main-color;
+      }
+    }
+
+    @include mixins.respond-to(mobile) {
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header>
+    <img src="./assets/icons/logo.svg" alt="logo" id="logo">
+    <nav>
+        <ul class="main-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li>
+                <a>Profile ⮟</a>
+                <ul class="submenu">
+                    <li><a href="#account">Account</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#logout">Log out</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <img src="./assets/icons/burger-menu.svg" alt="burger-menu" id="burger-menu">
+</header>
+
+<nav id="mobile-menu">
+    <ul class="mobile-menu-list">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+        <li class="has-submenu">
+            <a class="mobile-link">Profile ⮟</a>
+            <ul class="submenu">
+                <li><a href="#account" class="mobile-link">Account</a></li>
+                <li><a href="#settings" class="mobile-link">Settings</a></li>
+                <li><a href="#logout" class="mobile-link">Log out</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<main id="content"></main>
+
+<footer>
+    <p>&copy; 2025 Real Estate Website</p>
+</footer>
+
+<script type="module" src="index.js"></script>
+</body>
+</html>

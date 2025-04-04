@@ -1,0 +1,13 @@
+@use './variables' as vars;
+@use './mixins' as mixins;
+
+#error-page {
+  .error-page-container {
+    @include mixins.flex-center(column);
+
+    gap: 25px;
+    margin-top: 150px;
+    font-size: 44px;
+    color: vars.$second-color;
+  }
+}

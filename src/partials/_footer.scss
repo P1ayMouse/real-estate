@@ -1,0 +1,9 @@
+@use './variables' as vars;
+@use './mixins' as mixins;
+
+footer {
+  background: #333;
+  color: vars.$main-color;
+  padding: 15px;
+  text-align: center;
+}

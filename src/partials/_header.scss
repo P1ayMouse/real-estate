@@ -1,0 +1,173 @@
+@use './variables' as vars;
+@use './mixins' as mixins;
+
+header {
+  @include mixins.flex-center(row);
+
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 30px 50px;
+  background-color: #FAF8F2;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+  #logo {
+    width: 100px;
+    cursor: pointer;
+  }
+
+  nav {
+    ul {
+      @include mixins.flex-center(row);
+
+      gap: 20px;
+      list-style: none;
+
+      li {
+        position: relative;
+
+        .submenu {
+          display: none;
+          position: absolute;
+          background-color: #FAF8F2;
+          padding: 10px 0;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          border-radius: 4px;
+          width: 120px;
+          z-index: 1000;
+
+          li {
+            a {
+              display: block;
+              padding: 10px 20px;
+              font-size: 16px;
+              color: vars.$second-color;
+              text-decoration: none;
+              transition: background-color 0.3s ease;
+
+              &:hover {
+                background-color: #C0C6CC;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .submenu {
+            display: block;
+          }
+        }
+      }
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 18px;
+      color: vars.$second-color;
+      padding: 10px 20px;
+      transition: background-color 0.5s ease;
+
+      &.active {
+        border-bottom: 3px solid vars.$second-color;
+      }
+
+      &:not(.active) {
+        &:hover {
+          background-color: #C0C6CC;
+          border-bottom: 3px solid rgba(vars.$second-color, 0.33);
+        }
+      }
+    }
+  }
+
+  #burger-menu {
+    width: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  @media screen and (max-width: 930px) {
+    nav {
+      display: none;
+    }
+
+    #burger-menu {
+      display: block;
+    }
+  }
+}
+
+#mobile-menu {
+  .mobile-menu-list{
+    margin-top: vars.$header-height + 60px;
+  }
+
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  width: 250px;
+  height: 100%;
+  background-color: vars.$second-color;
+  color: vars.$main-color;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.2);
+  transform: translateX(-110%);
+  transition: transform 0.3s ease;
+  padding: 20px;
+
+  ul {
+    list-style: none;
+    margin-top: 25px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 60px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    color: vars.$main-color;
+    padding: 10px;
+
+    &.active {
+      border-bottom: 2px solid vars.$main-color;
+    }
+
+    &:not(.active) {
+      &:hover {
+        border-bottom: 3px solid rgba(vars.$main-color, 0.33);
+      }
+    }
+  }
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  .has-submenu {
+    .submenu {
+      display: none;
+
+      &.open {
+        display: flex;
+        flex-direction: column;
+      }
+
+      li {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 931px) {
+    display: none;
+  }
+}
+
+a {
+  cursor: pointer;
+}
