@@ -47,19 +47,22 @@ function setActiveLink () {
     });
 }
 
-setActiveLink();
-
 window.addEventListener('hashchange', () => {
     const page = location.hash.slice(1);
     loadPage(page);
     setActiveLink();
 });
 
-if (location.hash) {
-    loadPage(location.hash.slice(1));
-} else {
-    loadPage('home');
-}
+document.addEventListener('DOMContentLoaded', () => {
+    if (location.hash) {
+        loadPage(location.hash.slice(1));
+    } else {
+        location.hash = 'home';
+        loadPage('home');
+    }
+
+    setActiveLink();
+});
 
 document.getElementById('logo').addEventListener('click', () => {
     window.location.hash = 'home';

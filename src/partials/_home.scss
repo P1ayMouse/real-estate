@@ -184,14 +184,6 @@
     @include mixins.respond-to(tablet) {
       padding: 30px 10px;
 
-      h2 {
-        font-size: 20px;
-      }
-
-      p {
-        font-size: 10px;
-      }
-
       .form-container {
         .form-row {
           flex-direction: column;

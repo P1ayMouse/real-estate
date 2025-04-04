@@ -17,13 +17,16 @@
 
 3. **Run scripts:**
    
-* Run SASS (compile SCSS to CSS):
-   ```bash
-    npm run sass
-   ```
-* For code linting with ESLint and Stylelint, run
-    ```bash
-    npm run lint
-    ``` 
+   * Run SASS (compile SCSS to CSS):
+      ```bash
+       npm run sass
+      ```
+   * For code linting with ESLint and Stylelint:
+       ```bash
+       npm run lint
+       ``` 
 
-4. **Launch the project:** Open src/index.html in your browser.
+   * Launch the project:
+       ```bash
+       npm run start
+       ```
