@@ -4,13 +4,13 @@
 #gallery {
   display: flex;
   gap: 50px;
-  padding: 100px 50px;
+  padding: 50px;
   justify-content: center;
   align-items: flex-start;
 
   .sorting {
     position: sticky;
-    top: vars.$header-height + 100;
+    top: vars.$header-height + 50;
     flex: 0 0 250px;
     padding: 25px;
     background-color: #fff;
@@ -21,7 +21,7 @@
     gap: 20px;
 
     h3 {
-      font-size: 1.75rem;
+      font-size: 28px;
       color: vars.$second-color;
       margin-bottom: 10px;
     }
@@ -32,14 +32,14 @@
 
       label {
         font-weight: bold;
-        font-size: 0.95rem;
+        font-size: 16px;
         margin-bottom: 5px;
         color: vars.$second-color;
       }
 
       select, input[type="range"], input[type="text"] {
         padding: 10px 12px;
-        font-size: 1rem;
+        font-size: 16px;
         border-radius: 8px;
         border: 2px solid rgba(vars.$second-color, 80%);
         background-color: vars.$main-color;
@@ -55,7 +55,7 @@
 
       #price-value {
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 16px;
         color: vars.$second-color;
         align-self: flex-end;
       }
@@ -68,7 +68,7 @@
     flex: 1;
 
     h2 {
-      font-size: 3rem;
+      font-size: 48px;
       color: vars.$second-color;
       margin-bottom: 50px;
     }
@@ -119,12 +119,12 @@
 
           h3 {
             margin: 0;
-            font-size: 1.25rem;
+            font-size: 20px;
           }
 
           p {
             margin: 5px 0 0;
-            font-size: 1rem;
+            font-size: 16px;
           }
         }
       }
@@ -170,7 +170,7 @@
 
     .gallery-content {
       h2 {
-        font-size: 2rem;
+        font-size: 32px;
       }
 
       .gallery-estates-list {
@@ -191,13 +191,13 @@
 
         button {
           padding: 6px 10px;
-          font-size: 0.9rem;
+          font-size: 15px;
         }
       }
     }
   }
 
-  @media screen and (max-width: 768px), (max-height: 500px) {
+  @media screen and (max-height: 736px) {
     flex-direction: column;
     align-items: stretch;
     padding: 20px;
@@ -210,26 +210,32 @@
       padding: 15px;
 
       h3 {
-        font-size: 1.5rem;
+        font-size: 24px;
       }
 
       .sort-item {
         label {
-          font-size: 0.9rem;
+          font-size: 15px;
         }
 
         select, input[type="range"], input[type="text"] {
-          font-size: 0.85rem;
+          font-size: 14px;
           padding: 8px 10px;
         }
       }
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
 
     .gallery-content {
       width: 100%;
 
       h2 {
-        font-size: 2rem;
+        font-size: 32px;
         margin-bottom: 20px;
       }
 
@@ -251,7 +257,7 @@
 
         button {
           padding: 5px 8px;
-          font-size: 0.8rem;
+          font-size: 14px;
         }
       }
     }
