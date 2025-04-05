@@ -28,6 +28,12 @@ header {
       li {
         position: relative;
 
+        a {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+
         .submenu {
           display: none;
           position: absolute;
@@ -35,7 +41,7 @@ header {
           padding: 10px 0;
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
           border-radius: 4px;
-          width: 112.5px;
+          width: 125px;
           z-index: 1000;
 
           li {
@@ -103,6 +109,12 @@ header {
 #mobile-menu {
   .mobile-menu-list{
     margin-top: vars.$header-height + 30px;
+
+    .mobile-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
   }
 
   position: fixed;
@@ -121,25 +133,31 @@ header {
     list-style: none;
     margin-top: 25px;
     padding: 0;
-  }
 
-  li {
-    margin-bottom: 60px;
-  }
+    li {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: flex-start;
 
-  a {
-    text-decoration: none;
-    font-size: 18px;
-    color: vars.$main-color;
-    padding: 10px;
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        color: vars.$main-color;
+        padding: 10px;
 
-    &.active {
-      border-bottom: 2px solid vars.$main-color;
-    }
+        .dropdown-arrow {
+          rotate: -90deg;
+        }
 
-    &:not(.active) {
-      &:hover {
-        border-bottom: 3px solid rgba(vars.$main-color, 0.33);
+        &.active {
+          border-bottom: 2px solid vars.$main-color;
+        }
+
+        &:not(.active) {
+          &:hover {
+            border-bottom: 3px solid rgba(vars.$main-color, 0.33);
+          }
+        }
       }
     }
   }
@@ -156,11 +174,12 @@ header {
         display: flex;
         flex-direction: column;
       }
-
-      li {
-        margin-bottom: 40px;
-      }
     }
+  }
+
+  .has-submenu > .mobile-link:hover {
+    background-color: transparent;
+    border-bottom: none;
   }
 
   @media screen and (min-width: 931px) {
@@ -170,4 +189,12 @@ header {
 
 a {
   cursor: pointer;
+}
+
+.dropdown-arrow {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-color: currentcolor;
+  mask: url('./assets/icons/dropdown-arrow.svg') no-repeat center;
 }
