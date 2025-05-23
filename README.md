@@ -1,4 +1,4 @@
-# Capstone Project Template
+# Real Estate Website
 
 ## Requirements
 - Node.js (preferably v22.11.0)
@@ -7,8 +7,8 @@
 ## Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://autocode.git.epam.com/artem/capstone-project-template.git
-   cd capstone-project-template
+    git clone https://github.com/P1ayMouse/real-estate
+    cd real-estate
    ````
 2. **Install dependencies:**
    ```bash
@@ -18,15 +18,15 @@
 3. **Run scripts:**
    
    * Run SASS (compile SCSS to CSS):
-      ```bash
-       npm run sass
-      ```
+     ```bash
+      npm run sass
+     ```
    * For code linting with ESLint and Stylelint:
-       ```bash
-       npm run lint
-       ``` 
+     ```bash
+      npm run lint
+     ``` 
 
    * Launch the project:
-       ```bash
-       npm run start
-       ```
+     ```bash
+      npm run start
+     ```
